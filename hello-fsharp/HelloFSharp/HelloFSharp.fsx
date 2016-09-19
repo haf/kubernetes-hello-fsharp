@@ -5,4 +5,4 @@ open Suave.Successful      // for OK-result
 open Suave.Web             // for config
 
 let config = { defaultConfig with bindings = [ HttpBinding.mkSimple HTTP "0.0.0.0" 8080 ] }
-startWebServer config (OK "Hello World!")
+startWebServer config (OK "Hello there World!")
