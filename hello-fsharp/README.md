@@ -1,4 +1,6 @@
-From http://kubernetes.io/docs/hellonode/
+Adapted from http://kubernetes.io/docs/hellonode/
+
+![Screenshot](./screenshot.png)
 
 
 ```
