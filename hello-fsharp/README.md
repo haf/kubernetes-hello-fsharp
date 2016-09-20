@@ -17,6 +17,7 @@ gcloud container clusters create hello-world
 gcloud container clusters get-credentials hello-world
 kubectl run hello-fsharp --image=gcr.io/$PROJECT_ID/hello-fsharp:v1 --port=8080
 kubectl expose deployment hello-fsharp --type="LoadBalancer"
+kubectl get services hello-fsharp
 ```
 
 Make changes
