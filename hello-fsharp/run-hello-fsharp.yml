@@ -14,12 +14,12 @@ spec:
     app: hello-fsharp
     tier: frontend
 ---
-apiVersion: v1
-kind: ReplicationController
+apiVersion: extensions/v1beta1
+kind: Deployment
 metadata:
-  name: frontend
+  name: hello-fsharp
 spec:
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -31,4 +31,3 @@ spec:
         image: gcr.io/kubernetes-logary/hello-fsharp:v2
         ports:
         - containerPort: 8080
-
